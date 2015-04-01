@@ -1,0 +1,31 @@
+{
+  "name": "post-crud-service",
+  "version": "0.0.0",
+  "description": "posts-api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andela-aonawale/post-crud-service.git"
+  },
+  "keywords": [
+    "create",
+    "read",
+    "update",
+    "delete",
+    "api"
+  ],
+  "author": "Ahmed Onawale",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andela-aonawale/post-crud-service/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
+    "mongoose": "^4.0.1"
+  }
+}
