@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var routes = require('./../app/routes');
+var routes = require('./../app/posts/routes');
 
 module.exports = function(db){
 	var app = express();
