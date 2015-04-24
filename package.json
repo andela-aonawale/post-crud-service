@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "node_modules/jasmine-node/bin/jasmine-node tests/posts/* --autotest --color",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
