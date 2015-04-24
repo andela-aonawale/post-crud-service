@@ -32,11 +32,15 @@ module.exports = {
 
 	// function to create a new post
 	createPost: function(request, response){
-		var post = new PostModel(request.body);
-		post.save(function(err){
-			if(err) response.json({error: "Invalid Post"});
-			response.json({message: "Post Created Successfully"});
-		});
+		if(!request.body.title || !request.body.author || !request.body.post){
+			response.json({message: "Invalid Post"});
+		}else{
+			var post = new PostModel(request.body);
+			post.save(function(err){
+				if(err) response.json({error: "Invalid Post"});
+				response.json({message: "Post Created Successfully"});
+			});
+		}
 	},
 
 	// function to update a post

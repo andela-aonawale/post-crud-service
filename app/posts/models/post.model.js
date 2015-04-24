@@ -11,7 +11,7 @@ var postSchema = new Schema({
 });
 
 postSchema.pre('save', function(next){
-	var currentDate = new Date();
+	var currentDate = new Date;
 	this.updated_on = currentDate;
 	if(!this.created_at){
 		this.created_on = currentDate;
